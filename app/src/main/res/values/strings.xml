@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">My Cocktail</string>
+    <string name="email">E-mail ...</string>
+    <string name="password">Passwrod ...</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="copyright">Created by Delfin Hernandez Ⓒ</string>
+    <string name="login_split">--------  or  --------</string>
+    <string name="facebook_btn_title">Login with facebook</string>
+    <string name="create_account">Create account</string>
+    <string name="log_in_btn"> → </string>
+
+    <string name="facebook_app_id">185716758927819</string>
+    <string name="fb_login_protocol_scheme">fb185716758927819</string>
+
+    <string name="section_title_rss">RSS</string>
+    <string name="section_title_cocktails">Cocktails</string>
+    <string name="section_title_profile">Profile</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="log_in">Log in</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="auth_failed">Autentication failed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="place_title">VINTAGE</string>
+    <string name="gin_section_title">Gin\'s</string>
+    <string name="whisky_section_title">Whisky\'s</string>
+    <string name="rum_section_title">Rum\'s</string>
+    <string name="other_section_title">Other\'s</string>
+    <string name="hello_blank_fragment" />
+    <string name="channel_title">Channel Title</string>
+</resources>

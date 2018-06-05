@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:visibility="visible"
+    android:id="@+id/login_view"
+    tools:context=".LoginActivity"
+    android:paddingLeft="0dp">
+
+    <!-- Background image -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
+        android:alpha="0.4"
+        android:id="@+id/login_view_bg"/>
+
+    <!-- Login Layout content -->
+
+    <LinearLayout
+        android:id="@+id/login_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <!-- App title and icon-->
+
+        <LinearLayout
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <!-- App icon -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:src="@drawable/like2" />
+
+            <!-- App title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:fontFamily="@font/raleway_extrabold"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/font_color"
+                android:textSize="24pt" />
+
+        </LinearLayout>
+
+        <!-- E-mail login -->
+        <LinearLayout
+            android:id="@+id/login_forms"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Input mail-->
+            <EditText
+                android:id="@+id/field_email"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingBottom="5dp"
+                android:paddingStart="15px"
+                android:paddingTop="5dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/font_color_forms"
+                android:textSize="10pt" />
+
+            <!-- Input password -->
+            <EditText
+                android:id="@+id/field_password"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:fontFamily="@font/raleway_medium"
+                android:paddingBottom="5dp"
+                android:paddingStart="15px"
+                android:paddingTop="5dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/font_color_forms"
+                android:textSize="10pt" />
+
+            <!-- Log in form title -->
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="37dp"
+                android:layout_weight="2"
+                android:background="@color/background_color"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingStart="15px"
+                android:text="@string/log_in"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10pt" />
+
+
+        </LinearLayout>
+
+        <!-- Facebook login -->
+
+        <LinearLayout
+            android:id="@+id/facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Split separation between e-mail login and facebook log in -->
+            <ImageButton
+                android:id="@+id/login_split"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/login_split"/>
+
+            <!-- Facebook button login-->
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="37dp"
+                android:layout_weight="2"
+                android:background="@color/background_color"
+                android:fontFamily="@font/raleway_bold"
+                android:text="rtgr"
+                android:textSize="10pt" />
+
+            <!-- Create new account button -->
+            <Button
+                android:id="@+id/email_create_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/create_account"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="8pt"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <!-- Author/Copyright -->
+        <LinearLayout
+            android:id="@+id/login_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_regular"
+                android:text="@string/copyright"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

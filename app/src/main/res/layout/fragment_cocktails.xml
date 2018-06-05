@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CocktailsFragment"
+    android:orientation="vertical"
+    android:id="@+id/cocktails_layout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_cocktails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_heigth"
+        android:background="@drawable/background_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingLeft="0dp"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:alpha="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="8"
+                android:alpha="1"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/section_title_cocktails"
+                android:textAlignment="center"
+                android:textColor="@color/background_color"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/lupa"
+                android:tint="@color/background_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/g"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/place_title"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/vertical_split"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/vertical_split"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/horitzontal_split"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/horitzontal_split"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/span_publicity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="2"
+        android:src="@drawable/span"></ImageView>
+
+</LinearLayout>

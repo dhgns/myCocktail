@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "upsa.mimo.delfin.mycocktail"
+        minSdkVersion 24
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+
+    implementation 'com.google.android.gms:play-services-auth:11.6.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // Facebook Android SDK (only required for Facebook Login)
+    // Used in FacebookLoginActivity.
+    implementation 'com.facebook.android:facebook-login:4.32.0'
+
+    implementation 'com.android.support:design:27.1.1'
+
+    // For the rss reader
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+apply plugin: 'com.google.gms.google-services'
