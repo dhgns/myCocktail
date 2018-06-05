@@ -4,6 +4,8 @@ import android.app.ActionBar;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -61,8 +63,14 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        Drawable bg_item = getDrawable(R.drawable.tool_bar_bg);
+
         navigation.setSelectedItemId(R.id.navigation_cocktails);
-        navigation.setItemBackgroundResource(R.drawable.item_bg);
+        navigation.setBackground(bg_item);
+
+
+        ColorStateList colorStateList = getColorStateList(R.color.nav_buttons);
+        navigation.setItemIconTintList(colorStateList);
 
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
