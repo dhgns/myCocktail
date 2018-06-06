@@ -1,12 +1,16 @@
 package upsa.mimo.delfin.mycocktail;
 
-import android.widget.ImageView;
-
 class Article {
 
     private String articleImageURL;
     private String title;
     private String description;
+
+    public Article(String url, String title, String desc){
+        this.articleImageURL = url;
+        this.title = title;
+        this.description = desc;
+    }
 
 
     public String getArticleImage() {
