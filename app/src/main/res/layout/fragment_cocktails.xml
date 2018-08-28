@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CocktailsFragment"
+    tools:context=".Views.UI.CocktailsFragment"
     android:orientation="vertical"
-    android:id="@+id/cocktails_layout">
+    android:id="@+id/cocktails_layout"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.Toolbar
@@ -67,7 +68,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
+        </LinearLayout> 
     </android.support.v7.widget.Toolbar>
 
     <TextView
@@ -138,6 +139,51 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageButton
+            android:id="@+id/ginsSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/gins"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/whiskysSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whiskys"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/rumsSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/rums"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/othersSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/others"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:background="@android:color/transparent"/>
+
     </android.support.constraint.ConstraintLayout>
 
     <ImageView
@@ -145,7 +191,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="2"
+        android:background="@android:color/transparent"
         android:src="@drawable/span"></ImageView>
 
 </LinearLayout>

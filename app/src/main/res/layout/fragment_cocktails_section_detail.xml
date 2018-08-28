@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.UI.CocktailsSectionDetailFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar_cocktails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_heigth"
+            android:background="@drawable/background_toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingLeft="0dp"
+            android:theme="?attr/actionBarTheme">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:alpha="1">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_media_previous"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/background_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="8"
+                    android:alpha="1"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/section_title_cocktails"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/short_option"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/short_option_1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="@string/section_title_cocktails"
+                android:textAlignment="center"
+                android:fontFamily="@font/raleway_bold"
+                android:gravity="center_vertical"
+                android:textSize="16pt"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/display_option"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/display_mode_1"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginBottom="50dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,9 +1,5 @@
-package upsa.mimo.delfin.mycocktail;
+package upsa.mimo.delfin.mycocktail.Views.UI;
 
-import android.app.ActionBar;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -12,16 +8,10 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
+
+import upsa.mimo.delfin.mycocktail.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//        actionBar.setCustomView(R.layout.cocktails_title_layout);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 

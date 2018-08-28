@@ -1,6 +1,6 @@
-package upsa.mimo.delfin.mycocktail;
+package upsa.mimo.delfin.mycocktail.ViewModels.BO;
 
-class Article {
+public class Article {
 
     private String articleImageURL;
     private String title;
